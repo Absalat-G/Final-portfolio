@@ -14,7 +14,7 @@ export const links = [
   small: (
     <FaLinkedin size={30}/>
     )
-  ,href: 'https://linkedIn.com',
+  ,href: 'https://linkedIn.com/in/absalat-girma-4877b4243',
   style: 'rounded-tr-md' 
 },
 {
@@ -30,7 +30,7 @@ small: (
   <FaGithub size={30}/>
   )
 ,
-href: 'https://Github.com',
+href: 'https://Github.com/Absalat-G',
 style: 'rounded-tr-md' 
 }
 ,
@@ -45,7 +45,7 @@ child: (
 small: (
   <HiOutlineMail size={30}/>
   )
-,href: 'https://mail.google.com',
+,href: 'mailto:workalemahuabsalat2011@gmail.com',
 style: 'rounded-tr-md' 
 },
 {
@@ -59,7 +59,7 @@ child: (
 small: (
 <BsFillPersonLinesFill size={30}/>
 ),
-href: './resume.pdf',
+href: 'https://drive.google.com/file/d/1PWlbfOrUzfgWqWAHDczdHY3bhsps2mh9/view?usp=drivesdk',
 style: 'rounded-tr-md' ,
 download: true,
 }

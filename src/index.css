@@ -37,6 +37,7 @@
 }
 
 @layer base {
+  
   body {
     @apply font-secondary text-lg leading-8 text-white;
   }
@@ -65,7 +66,7 @@
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#1DDFDF] to-[#46ACB3] font-bold font-primary hover:from-[#46ACB3] hover:to-[#1DDFDF];
   }
   .section {
-    @apply py-8 lg:py-20 lg:h-screen flex items-center;
+    @apply  lg:py-20  scroll-pt-16 py-16 lg:h-screen flex items-center;
   }
  
 

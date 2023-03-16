@@ -14,21 +14,21 @@ const Project = () => {
 
   const [active ,setActive] = useState(null)
   const langs = [
-    {name:'React with antdesign', para:'Website development for IT and Business Institute', color: 'hue-rotate-[240deg]',image:Image, Demo: 'https://www.google.com/',Github:''},
-    {name:'Adobe illustrator', para: 'Logo design for Company',image: Image1,  Demo: 'https://www.google.com/',Github:''},
-    {name:'Wordpress',para:'Website development for Federal Police Commision',image: Image2  ,Demo: 'https://www.google.com/',Github:''},
-    {name:'PHP',para:'Blood Bank Management System',image: Image3 , Demo: 'https://www.google.com/',Github:''},
+    {name:'React with antdesign', para:'Website development for IT and Business Institute', color: '',image:Image, Demo: 'https://www.saintmichael.edu.et',Github:'https://Github.com/Absalat-G'},
+    {name:'Adobe illustrator', para: 'Logo design for Company',image: Image1,  Demo:Image1,Github:''},
+    {name:'Wordpress',para:'Website development for Federal Police Commision',image: Image2  ,Demo: 'https://dev-federalpolice.pantheonsite.io/',Github:''},
+    {name:'PHP',para:'Blood Bank Management System',image: Image3 , Demo: Image3,Github:''},
     {name:'Arduino',para:'RFID based Antitheft Security System for Museum ',image: Image4, Demo: 'https://www.google.com/',Github:''},
   
   ]
   
   return (
     
-    <div className="h-screen text-white flex items-center justify-center " id='portfolio'>
+    <div className=" section pt-48 h-screen text-white flex items-center justify-center " id='portfolio'>
      
 <div className="max-w-5xl">
 <div>
-          <p className=" flex items-center justify-center text-4xl font-bold p-2 inline">
+          <p className=" flex items-center justify-center text-4xl font-bold p-2">
           <span className='font-black'>My &nbsp;</span>
           <span className="text-cyan-500 font-bold inline border-b-4 border-gray-500 ">  Projects</span>
           </p>
@@ -45,14 +45,8 @@ speed={800}
 autoplay={{
   delay: 3000,
 }}
-
 modules={[Autoplay]}
-
 >
-
-
-
-
 {
   langs.map(({color,name,image,para,Demo,Github},i)=>(
   <SwiperSlide key={i}>

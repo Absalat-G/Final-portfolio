@@ -18,7 +18,7 @@ const Banner = () => {
     whileInView={'show'} 
     viewport={{once:false, amount:0.7}}
    className='flex items-center justify-center lg:hidden h-[200px]'>
-    <img src={emoji} ></img>
+    <img src={emoji} alt=''/>
   </motion.div>
   <motion.h1 
   variants={fadeIn('up', 0.3)}
