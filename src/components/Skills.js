@@ -2,6 +2,8 @@ import React from 'react';
 import tailwind from "../assets/tailwind.png"
 import node from "../assets/node.png"
 import github from "../assets/github.png"
+import github2 from "../assets/github black.jpg"
+
 import reactImage from "../assets/react.png"
 import html from "../assets/html.png"
 import css from "../assets/css.png"
@@ -42,19 +44,19 @@ const Skills = () => {
     },
     {
       id: 6,
-      src: github,
+      src:  github2,
       title: "GitHub",
-      style: "shadow-gray-400",
+      style: "dark:shadow-gray-400 shadow-gray-800 ",
     },
     {
       id: 6,
       src: node,
       title: "Node Js",
-      style: "shadow-white",
+      style: "shadow-amber-200",
     },
       ]
-  return <div name="skills" className=' max-lg:mt-20 section bg-gradient-to-b  to-black w-full h-screen' id='skills'>
- <div className="max-w-screen-lg container mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+  return <div name="skills" className=' lg:mt-20 section bg-gradient-to-b  to-black w-full h-screen ' id='skills'>
+ <div className="max-w-screen-lg container mx-auto p-4 flex flex-col justify-center w-full h-full text-black dark:text-white">
         <div>
           <p className="text-4xl text-cyan-500 font-bold border-b-4 border-gray-500 p-2 inline">
             Skills
@@ -71,7 +73,7 @@ const Skills = () => {
           {tech.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg  text-black dark:text-white ${style}`}
             >
               <img src={src} alt="" className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>

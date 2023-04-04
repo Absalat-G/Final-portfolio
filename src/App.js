@@ -1,5 +1,5 @@
 import React from 'react';
-// components
+
 import Banner from './components/Banner';
 import Header from './components/Header';
 import Nav from './components/Nav';
@@ -13,7 +13,7 @@ import Project from './components/Project';
 const App = () => {
   return (
 
-    <div className='bg-site bg-no-repeat bg-cover bg-left min-h-screen overflow-hidden dark:bg-slate-300'>
+    <div className=' bg-whitebackground dark:bg-site bg-no-repeat bg-cover bg-left min-h-screen overflow-hidden'>
       <Header/>
       <Banner/>
       <Nav/>

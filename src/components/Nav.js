@@ -13,8 +13,8 @@ const Nav = () => {
       
            
        
-       <div className='w-full bg-white/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 
-        flex justify-between items-center text-2xl text-white/50'>
+       <div className='w-full bg-black/20 dark:bg-white/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 
+        flex justify-between items-center text-2xl text-black/60 dark:text-white/60'>
         <Link 
         to='home'  
         activeClass='active'

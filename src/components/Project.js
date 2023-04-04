@@ -24,12 +24,12 @@ const Project = () => {
   
   return (
     
-    <div className=" section pt-48 h-screen text-white flex items-center justify-center " id='portfolio'>
+    <div className=" section pt-48 h-screen text-black dark:text-white flex items-center justify-center " id='portfolio'>
      
 <div className="max-w-5xl">
 <div>
           <p className=" flex items-center justify-center text-4xl font-bold p-2">
-          <span className='font-black'>My &nbsp;</span>
+          <span className='font-black  text-black dark:text-white'>My &nbsp;</span>
           <span className="text-cyan-500 font-bold inline border-b-4 border-gray-500 ">  Projects</span>
           </p>
           <br />

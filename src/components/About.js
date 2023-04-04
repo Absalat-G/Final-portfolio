@@ -12,27 +12,25 @@ const About = () => {
         variants={fadeIn('right', 0.3)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{once: false, amount: 0.3}}
-        className='flex-1 bg-about bg-contain bg-no-repeat  h-[640px]  mix-blend-lighten bg-top '>
+        viewport={{once: true, amount: 0.3}}
+        className='flex-1 bg-about bg-contain bg-no-repeat  h-[640px] dark:mix-blend-lighten bg-top '>
           
         </motion.div>
         <motion.div 
         variants={fadeIn('left', 0.5)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{once: false, amount: 0.3}}
+        viewport={{once: true, amount: 0.3}}
         className='flex-1'>
         <h2 className='h2 text-cyan-500'>About</h2>
-        <h3 className='h3 mb-4'>
+        <h3 className='h3 mb-4  text-black dark:text-white'>
           I'm a Full Stack Web Developer and Web Designer
         </h3>
-        <p className='mb-6'>
+        <p className='mb-6  text-black dark:text-white'>
         I got my Bsc Degree on Electrical and computer engineering 
-          with focus area of computer stream. 
-          Background in HTML, CSS, JavaScript, WordPress, react.js website development 
-          from front end and back end PHP, Node.js
-          and on Computer Networking who can take multiple responsibilities with competence. 
-          As well as Strong planning and organizational skills.
+          with focus area of computer stream.Have background on HTML, CSS, JavaScript, WordPress, react.js website development 
+          from front end and PHP, Node.js from backend, on Computer Networking also have interest 
+          on adobes(illustrator,Photoshop) used for designing logos,banners.
         </p>
         <Link to='contact' >
         <a href='#'  className='w-1/2 px-6 py-3 m-4 btn btn-sm'>
