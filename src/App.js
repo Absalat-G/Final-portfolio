@@ -13,7 +13,7 @@ import Project from './components/Project';
 const App = () => {
   return (
 
-    <div className=' bg-whitebackground dark:bg-site bg-no-repeat bg-cover bg-left min-h-screen overflow-hidden'>
+    <div className=' bg-whitebackground  gap-y-8 lg:gap-y-5 dark:bg-site bg-no-repeat bg-cover bg-left min-h-screen overflow-hidden'>
       <Header/>
       <Banner/>
       <Nav/>

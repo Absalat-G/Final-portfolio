@@ -7,21 +7,21 @@ const Header = () => {
   const [activeTheme, setTheme] = useThemeSwitcher();
   return (
   
-  <header id='home' className='py-8'>
+  <header id='home' className='lg:fixed lg:top-0 lg:left-0 lg:right-0 flex items-center py-8'>
 <div className='container mx-auto '>
-<div className='justify-between items-center flex'>
+<div className=' items-center justify-between flex'>
   
 
 							{activeTheme === 'dark' ? (
 							<h1
 									
-									className="w-36 font-fourth text-5xl text-black" 
+									className=" w-36 font-fourth text-5xl text-black" 
 									alt="Dark Logo"
 								>Absalat</h1>
 							) : (
 								<h1
 									
-									className="w-36 font-fourth text-5xl text-white"
+									className=" w-36 font-fourth text-5xl text-white"
 									alt="Dark Logo"
 								>Absalat</h1>
 							)}
@@ -34,13 +34,12 @@ const Header = () => {
 						className="ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
 					>
 						{activeTheme === 'dark' ? (
-							<FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
+							<FiMoon className="text-secondary-dark hover:text-gray-400 dark:text-secondary-light dark:hover:text-primary-light text-xl" />
 						) : (
 							<FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
 						)}
 					</div>
-
-<div className="">
+					<div className="w-48  items-center font-fourth text-xl ">
 <a href="https://drive.google.com/file/d/1PWlbfOrUzfgWqWAHDczdHY3bhsps2mh9/view?usp=drivesdk" className="btn btn-sm relative inline-flex items-center no-underline justify-start py-1.5 pl-2.5 pr-12 overflow-hidden font-semibold text-btn 
  transition-all duration-150 ease-in-out rounded-2xl hover:pl-10 hover:pr-6 bg-gray-50 group">
 <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out  group-hover:h-full"></span>
@@ -55,10 +54,11 @@ const Header = () => {
 </svg>
 </span>
 
-<span className="btn-top relative w-full text-left text-xl  transition-colors duration-200 ease-in-out group-hover:text-white">Download Cv</span>
+<span className="btn-top relative w-full text-left text-xl  transition-colors duration-200 ease-in-out group-hover:text-white">Resume</span>
 </a>
 
     </div>
+
 </div>
 </div>
 </header>

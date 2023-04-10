@@ -24,7 +24,7 @@ const Project = () => {
   
   return (
     
-    <div className=" section pt-48 h-screen text-black dark:text-white flex items-center justify-center " id='portfolio'>
+    <div className=" section pt-48 h-screen  text-black dark:text-white flex items-center justify-center " id='portfolio'>
      
 <div className="max-w-5xl">
 <div>
@@ -50,8 +50,8 @@ modules={[Autoplay]}
 {
   langs.map(({color,name,image,para,Demo,Github},i)=>(
   <SwiperSlide key={i}>
-    <div className="h-96 flex ">
-        <div className={`card ${active === i && "card-active"} to-red-600/40 ${color} border-red-600`}>
+    <div className="h-96 flex">
+        <div className={`card ${active === i && "card-active"} to-red-600/40 ${color} border-teal-500  bg-slate-200 dark:bg-transparent`}>
           {/* <div className="logo">
             <ion-icon name={`logo-${lang.logo}`}></ion-icon>
           </div> */}
@@ -61,7 +61,8 @@ modules={[Autoplay]}
             className=' rounded-md  '
             
             />
-          <h2 className=" text-3xl mt-6 font-semibold">{name}</h2>
+          
+          <h2 className="  text-3xl mt-6 font-semibold">{name}</h2>
             <p className='para'>
              {para}
           
@@ -76,6 +77,7 @@ modules={[Autoplay]}
               </a>
              
             </div>
+          
           </div>
            
         </div>

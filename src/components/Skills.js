@@ -1,7 +1,7 @@
 import React from 'react';
 import tailwind from "../assets/tailwind.png"
 import node from "../assets/node.png"
-import github from "../assets/github.png"
+
 import github2 from "../assets/github black.jpg"
 
 import reactImage from "../assets/react.png"
@@ -55,10 +55,10 @@ const Skills = () => {
       style: "shadow-amber-200",
     },
       ]
-  return <div name="skills" className=' lg:mt-20 section bg-gradient-to-b  to-black w-full h-screen ' id='skills'>
+  return <div name="skills" className=' lg:mt-20 mt-24 section bg-gradient-to-b  to-black w-full h-screen ' id='skills'>
  <div className="max-w-screen-lg container mx-auto p-4 flex flex-col justify-center w-full h-full text-black dark:text-white">
         <div>
-          <p className="text-4xl text-cyan-500 font-bold border-b-4 border-gray-500 p-2 inline">
+          <p className=" text-4xl text-cyan-500 font-bold border-b-4 border-gray-500 p-2 inline">
             Skills
           </p>
           <p className="py-6">These are the technologies I've worked with</p>
@@ -73,7 +73,7 @@ const Skills = () => {
           {tech.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg  text-black dark:text-white ${style}`}
+              className={`shadow-md bg-slate-200 dark:bg-transparent hover:scale-105 duration-500 py-2 rounded-lg  text-black dark:text-white ${style}`}
             >
               <img src={src} alt="" className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>

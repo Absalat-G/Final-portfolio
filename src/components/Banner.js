@@ -10,7 +10,7 @@ import { Link } from 'react-scroll';
 const Banner = () => {
   return <section id='home' className='min-h-[85vh] lg:mim-h-[78vh] flex items-center' >
 <div className='container mx-auto'>
-<div className='flex flex-col gap-y-6 lg:flex-row lg:items-center lg:gap-x-10'>
+<div className='flex flex-col  gap-y-8 lg:gap-y-5 lg:flex-row lg:items-center xl:gap-x-3 lg:gap-x-10'>
 <div className='flex-1 text-center font-secondary lg:text-left'>
   <motion.div
    variants={fadeIn('left', 0.2)}
@@ -33,7 +33,7 @@ const Banner = () => {
    initial='hidden'
     whileInView={'show'} 
     viewport={{once:true, amount:0.7}}
- className='mb-6 text-[36px] lg:text-[52px] font-secondary font-semibold uppercase leading-[1]'>
+ className='mb-6 text-[32px] xl:text-[28px] lg:text-[52px] font-secondary font-semibold uppercase leading-[1]'>
   <span className='mr-3  text-black dark:text-white'>I am a </span>
   <TypeAnimation
    sequence={[

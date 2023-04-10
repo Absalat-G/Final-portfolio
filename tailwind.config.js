@@ -39,7 +39,7 @@ module.exports = {
         site: "url('./assets/site-bg.jpg')",
         about: "url('./assets/photop.png')",
         services: "url('./assets/services.png')",
-        whitebackground: "url('./assets/white.jpg')"
+        whitebackground: "url('./assets/white2.jpg')"
       },
     },
   },
