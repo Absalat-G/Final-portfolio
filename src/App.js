@@ -5,10 +5,7 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import About from './components/About';
 import Skills from './components/Skills';
-
 import Contact from './components/Contact';
-
-
 import Project from './components/Project';
 const App = () => {
   return (
@@ -20,7 +17,6 @@ const App = () => {
       <About/>
       <Skills/>
       <Project/>
-     
       <Contact/>
    <div className='h-[200px]'></div>
      

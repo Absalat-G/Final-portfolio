@@ -59,7 +59,7 @@ child: (
 small: (
 <BsFillPersonLinesFill size={30}/>
 ),
-href: 'https://drive.google.com/file/d/1PWlbfOrUzfgWqWAHDczdHY3bhsps2mh9/view?usp=drivesdk',
+href: 'https://drive.google.com/file/d/1im5Alpm6dOGD1bMKD-Kg-oje1ISbZSbD/view?usp=drive_link',
 style: 'rounded-tr-md' ,
 download: true,
 }

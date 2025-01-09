@@ -1,6 +1,11 @@
 import React from 'react';
 import tailwind from "../assets/tailwind.png"
 import node from "../assets/node.png"
+import python from "../assets/python.png"
+import php from "../assets/php.svg"
+import mongodb from "../assets/mongodb.png"
+import laravel from "../assets/Laravel.png"
+import webflow from "../assets/webflow.png"
 
 import github2 from "../assets/github black.jpg"
 
@@ -44,17 +49,50 @@ const Skills = () => {
     },
     {
       id: 6,
-      src:  github2,
+      src: github2,
       title: "GitHub",
-      style: "dark:shadow-gray-400 shadow-gray-800 ",
+      style: "dark:shadow-gray-400 shadow-gray-800",
     },
     {
-      id: 6,
+      id: 7,
       src: node,
       title: "Node Js",
       style: "shadow-amber-200",
     },
-      ]
+    {
+      id: 8,
+      src: python,
+      title: "Python",
+      style: "shadow-blue-400",
+    },
+    {
+      id: 9,
+      src: mongodb,
+      title: "MongoDB",
+      style: "shadow-green-500",
+    },
+    {
+      id: 10,
+      src: php,
+      title: "PHP",
+      style: "shadow-purple-500",
+    },
+    {
+      id: 11,
+      src: laravel,
+      title: "Laravel",
+      style: "shadow-red-500",
+    },
+    {
+      id: 12,
+      src: webflow,
+      title: "Webflow",
+      style: "shadow-indigo-400",
+    },
+  ];
+  
+    
+      
   return <div name="skills" className=' lg:mt-20 mt-24 section bg-gradient-to-b  to-black w-full h-screen ' id='skills'>
  <div className="max-w-screen-lg container mx-auto p-4 flex flex-col justify-center w-full h-full text-black dark:text-white">
         <div>
@@ -75,7 +113,7 @@ const Skills = () => {
               key={id}
               className={`shadow-md bg-slate-200 dark:bg-transparent hover:scale-105 duration-500 py-2 rounded-lg  text-black dark:text-white ${style}`}
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <img src={src} alt="" className="w-20 h-20 mx-auto" />
               <p className="mt-4">{title}</p>
             </div>
           ))}

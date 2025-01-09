@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../assets/avatar2.png'
+import Image from '../assets/ava-01.png'
 import {TypeAnimation} from 'react-type-animation'
 import {motion } from 'framer-motion'
 import {fadeIn} from '../variants'
@@ -8,7 +8,7 @@ import emoji from '../assets/emoji.png'
 import { Link } from 'react-scroll';
 
 const Banner = () => {
-  return <section id='home' className='min-h-[85vh] lg:mim-h-[78vh] flex items-center' >
+  return <section id='banner' className='min-h-[85vh] lg:min-h-[90vh] flex items-center' >
 <div className='container mx-auto'>
 <div className='flex flex-col  gap-y-8 lg:gap-y-5 lg:flex-row lg:items-center xl:gap-x-3 lg:gap-x-10'>
 <div className='flex-1 text-center font-secondary lg:text-left'>
@@ -51,50 +51,44 @@ const Banner = () => {
   />
   </motion.div>
   <motion.p 
-  variants={fadeIn('up', 0.5)}
-  initial='hidden'
-   whileInView={'show'} 
-   viewport={{once:true, amount:0.7}}
-  className='mb-8 max-w-lg mx-auto lg:mx-0  text-black dark:text-white'> 
-  A passionate woman who can take multiple responsibilities with competence. 
-          As well as Strong planning and organizational skills.
-          </motion.p>
-          <motion.div
-           variants={fadeIn('up', 0.6)}
-  initial='hidden'
-   whileInView={'show'} 
-   viewport={{once:true, amount:0.7}}>
+      variants={fadeIn('up', 0.5)}
+      initial='hidden'
+      whileInView={'show'} 
+      viewport={{once:true, amount:0.7}}
+      className='mb-8 max-w-lg mx-auto lg:mx-0  text-black dark:text-white'> 
+      A passionate woman who can take multiple responsibilities with competence. 
+      As well as Strong planning and organizational skills.
+  </motion.p>
+  <motion.div
+    variants={fadeIn('up', 0.6)}
+    initial='hidden'
+    whileInView={'show'} 
+    viewport={{once:true, amount:0.7}}>
     <Link to='portfolio' ><a href='#' className='text-gradient btn-link'>My Portfolio</a></Link>
-
 </motion.div>
 </div>
-
-<div ><SocialLink/></div>
+<div><SocialLink/></div>
 <motion.div 
-variants={fadeIn('up', 0.7)}
-initial='hidden'
- whileInView={'show'} 
- viewport={{once:true, amount:0.7}}
-className='lg:hidden flex text-[20px] gap-x-6 max-w-max mx-auto'>
-  {links.map(({ href,small, download})=> (
- 
-  <a href= {href}
-  download={download}
-  target="_blank"
-  rel="noreferrer"
-  > 
-   {small}
- </a>
-  
-  
-  ))}
+    variants={fadeIn('up', 0.7)}
+    initial='hidden'
+    whileInView={'show'} 
+    viewport={{once:true, amount:0.7}}
+    className='lg:hidden flex text-[20px] gap-x-6 max-w-max mx-auto'>
+      {links.map(({ href,small, download})=> (
+      <a href= {href}
+      download={download}
+      target="_blank"
+      rel="noreferrer"
+      > 
+      {small}
+    </a>
+      ))}
 </motion.div>
 <motion.div 
 variants={fadeIn('down', 0.5)}
 initial='hidden'
- whileInView={'show'} 
- 
-className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[700px] '>
+whileInView={'show'} 
+className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[500px] '>
   <img src={Image} alt=''/>
 </motion.div>
 </div>

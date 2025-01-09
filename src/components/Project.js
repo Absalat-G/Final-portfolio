@@ -5,20 +5,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"
 import Image from '../assets/portfolio1.PNG'
 import Image1 from '../assets/portfolio2.jpg'
-import Image2 from '../assets/portfolio3.PNG'
+import Image2 from '../assets/owl_image.png'
 import Image3 from '../assets/portfolio-img3.png'
-import Image4 from '../assets/portfolio-img2.png'
+import Image4 from '../assets/bloodbank.png'
+import Image5 from '../assets/rfid.png'
 import { Autoplay } from 'swiper';
 
 const Project = () => {
 
   const [active ,setActive] = useState(null)
   const langs = [
-    {name:'React with antdesign', para:'Website development for IT and Business Institute', color: '',image:Image, Demo: 'https://www.saintmichael.edu.et',Github:'https://Github.com/Absalat-G'},
-    {name:'Adobe illustrator', para: 'Logo design for Company',image: Image1,  Demo:Image1,Github:''},
-    {name:'Wordpress',para:'Website development for Federal Police Commision',image: Image2  ,Demo: 'https://dev-federalpolice.pantheonsite.io/',Github:''},
-    {name:'PHP',para:'Blood Bank Management System',image: Image3 , Demo: Image3,Github:''},
-    {name:'Arduino',para:'RFID based Antitheft Security System for Museum ',image: Image4, Demo: 'https://www.google.com/',Github:''},
+    {name:'React Js', para:'Website development for IT and Business Institute', color: '',image:Image, Demo: 'https://saint-michael-edu.netlify.app/',Github:'https://github.com/saintmich/saint_mich/'},
+    {name:'Adobe illustrator', para: 'Logo design for Company',image: Image1,  Demo:Image1, Github:''},
+    {name:'Webflow', para: 'portfolio website for company',image: Image2,  Demo:'https://owldesigns.co/' ,Github:''},
+    {name:'Laravel',para:'Project Management System',image: Image3 , Demo: Image3,Github:''},
+    {name:'PHP',para:'Blood Bank Management System',image: Image4 , Demo: Image4,Github:''},
+    {name:'Arduino',para:'RFID based Antitheft Security System for Museum ',image: Image5, Demo: '',Github:''},
   
   ]
   
