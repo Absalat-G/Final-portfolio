@@ -6,7 +6,8 @@ import php from "../assets/php.svg"
 import mongodb from "../assets/mongodb.png"
 import laravel from "../assets/Laravel.png"
 import webflow from "../assets/webflow.png"
-
+import flutter from "../assets/flutter.svg"
+import docker from "../assets/docker.png"
 import github2 from "../assets/github black.jpg"
 
 import reactImage from "../assets/react.png"
@@ -89,11 +90,26 @@ const Skills = () => {
       title: "Webflow",
       style: "shadow-indigo-400",
     },
+    {
+      id: 13,
+      src: flutter,
+      title: "Flutter",
+      style: "shadow-blue-300",
+    },
+    {
+      id: 14,
+      src: docker,
+      title: "Docker",
+      style: "shadow-blue-500",
+    },
   ];
   
     
       
-  return <div name="skills" className=' lg:mt-20 mt-24 section bg-gradient-to-b  to-black w-full h-screen ' id='skills'>
+
+  return (
+  <div name="skills" className='lg:mt-40 section bg-gradient-to-b to-black w-full min-h-screen' id='skills'>
+
  <div className="max-w-screen-lg container mx-auto p-4 flex flex-col justify-center w-full h-full text-black dark:text-white">
         <div>
           <p className=" text-4xl text-cyan-500 font-bold border-b-4 border-gray-500 p-2 inline">
@@ -120,7 +136,7 @@ const Skills = () => {
         </motion.div>
       </div>
    
-   </div>;
+   </div>)
 };
 
 export default Skills;

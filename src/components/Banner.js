@@ -37,8 +37,10 @@ const Banner = () => {
   <span className='mr-3  text-black dark:text-white'>I am a </span>
   <TypeAnimation
    sequence={[
-    'Web Developer',
+    'Full-Stack Developer',
      2000,
+     'Flutter Developer',
+      2000 ,
      'Web Designer',
       2000 ,
       'Logo Designer',
